@@ -12,7 +12,7 @@ Deep Learning Challenge
  This analysis reviewed a dataset of historical applications for funding from the 'Alphabet Soup' nonprofit organisation. The goal of the analysis was to review the dataset and apply machine learning and neural network techniques, to create a classification model that can predict whether applicants' ventures will be successful if funded by Alphabet Soup.
 
  The dataset consisted of a relatively even mix of successful and unsuccessful ventures:
- - Successful: 18,261 (53.2%) 34299
+ - Successful: 18,261 (53.2%)
  - Unsuccessful: 16,038 (46.8%)
 
  The dataset content describes the historical applications in terms of the following aspects:
