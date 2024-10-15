@@ -67,7 +67,15 @@ Was the target model performance (predictive accuracy higher than 75%) achieved?
     - subsequent attempts to optimise the model (``AlphabetSoupCharity_Optimisation.ipynb``) achieved similar results (72.9%, 72.9%, and 73.0% accuracy).
 
 What steps were taken to attempt to increase model performance?
-- 
+- The main steps taken to attempt model optimisation were to:
+    1. Use a different activation function for the hidden layers
+    1. Add an additional hidden layer
+    1. Add additional neurons to the hidden layers.
+- Additional optimisations (not shown in ``AlphabetSoupCharity_Optimisation.ipynb``) included attempts to exclude certain feature columns, and reducing the number of funding values ('ASK_AMT') by introducing a limited number funding ranges ('bins'). However, those approaches yielded similar results.
+
+NOTE: exported results for both the initial model, and additional optimisations, were saved to the following files, respectively:
+- AlphabetSoupCharity.h5
+- AlphabetSoupCharity_Optimisation.h5
 
 ## Results Summary & Recommendation
 
@@ -76,6 +84,10 @@ What steps were taken to attempt to increase model performance?
 The 'AlphabetSoupCharity' Deep Learning model achieved approximately 73% accuracy, which was less than the target model performance of 75% accuracy.
 
 
+
+### Recommendation
+
+A different model could potentially solve this classification problem with a higher degree of accuracy. The individual optimisation techniques used in this study did not significantly improve the model's performance. A recommended next step would be to employ the 'Keras Tuner' optimisation framework to evaluate a broader range of numbers of neurons, layers, and choice of activation functions to define a better model for predictions from the 'Alphabet Soup' dataset.
 
 # References
 
